@@ -1,6 +1,6 @@
 function iniciarLogin() {
  
-    const usuarioCorrecto = "student";
+    const usuarioCorrecto = "admin";
     const claveCorrecta = "1234";
     let intentos = 1;
     let accesoConcedido = false;
