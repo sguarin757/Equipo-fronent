@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Futurista - CESDE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login-card">
+        <h2>CESDE Login</h2>
+        <p class="subtitle">Acceso al Sistema de Gestión de Notas</p>
+
+        <div class="form-group">
+            <label for="userInput">Nombre de Usuario</label>
+            <input type="text" id="userInput" placeholder="Ingresa tu ID">
+            
+            <label for="passInput">Contraseña Segura</label>
+            <input type="password" id="passInput" placeholder="••••••••">
+
+            <button onclick="iniciarLogin()">Autorizar Acceso</button>
+        </div>
+
+        <div id="mensajeArea">
+            <p id="mensajeEstado"></p>
+        </div>
+    </div>
+
+    <script src="js/equipoFron.js"></script>
+</body>
+</html>
