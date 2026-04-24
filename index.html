@@ -1,0 +1,65 @@
+<!DOCTYPE html> <html lang="es"> <head>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Portal Académico - Gestión de Usuarios</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        <h1>Sistema de Gestión Académica</h1>
+        <p>Plataforma de Control Estudiantil</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Registrar Nuevo Usuario</h2>
+            <form id="form-usuario">
+                
+                <div class="grupo-input">
+                    <label>Documento de Identidad:</label>
+                    <input type="text" id="documento" placeholder="Número de documento" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label>Nombre Completo:</label>
+                    <input type="text" id="nombre" placeholder="Nombre y Apellidos" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label>Nombre de Usuario:</label>
+                    <input type="text" id="usuario" placeholder="Ej: emily.lopez" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label>Correo Institucional:</label>
+                    <input type="email" id="correo" placeholder="ejemplo@cesde.edu.co" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label>Contraseña:</label>
+                    <input type="password" id="password" placeholder="Mínimo 6 caracteres" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label>Rol en el Sistema:</label>
+                    <select id="rol">
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Docente">Docente</option>
+                        <option value="Administrativo">Administrativo</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="btn-guardar">Registrar en la Base de Datos</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Usuarios en el Sistema</h2>
+            <div id="lista-usuarios">
+                <p class="mensaje-vacio">Esperando ingreso de datos...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
